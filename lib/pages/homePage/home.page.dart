@@ -1,3 +1,5 @@
+import 'package:cartoon_repository/widgets/cartoonCarousel/cartoonCarousel.widget.dart';
+import 'package:cartoon_repository/widgets/header/header.widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,14 +9,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Container(
-            height: 300,
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.red,
-            ),
-          ),
+          Header(),
+          CartoonCarousel(),
         ],
       ),
     );
