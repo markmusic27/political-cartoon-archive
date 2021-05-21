@@ -1,5 +1,6 @@
 import 'package:cartoon_repository/utils/constants.util.dart';
 import 'package:cartoon_repository/widgets/cartoonCarousel/cartoonCarousel.widget.dart';
+import 'package:cartoon_repository/widgets/noiceImageLayer/noiceImageLayer.widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,21 +8,24 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 100),
-          Text(
-            "CARTOON ARCHIVE",
-            style: kDefaultTextStyle.copyWith(fontSize: 80),
-          ),
-          SizedBox(height: 15),
-          Text(
-            "A web archive of western and eastern political cartoons (1910 - 1939).",
-            style: TextStyle(fontSize: 25, color: kDarkColor.withOpacity(0.8)),
-          ),
-          SizedBox(height: 100),
-          CartoonCarousel(),
-        ],
+      body: NoiceImageLayer(
+        content: Column(
+          children: [
+            SizedBox(height: 100),
+            SelectableText(
+              "CARTOON ARCHIVE",
+              style: kDefaultTextStyle.copyWith(fontSize: 80),
+            ),
+            SizedBox(height: 15),
+            SelectableText(
+              "A web archive of western and eastern political cartoons (1910 - 1939).",
+              style:
+                  TextStyle(fontSize: 25, color: kDarkColor.withOpacity(0.8)),
+            ),
+            SizedBox(height: 100),
+            CartoonCarousel(),
+          ],
+        ),
       ),
     );
   }
