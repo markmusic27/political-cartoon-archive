@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:cartoon_repository/core/core.dart';
+import 'package:cartoon_repository/pages/moreInfoPage/moreInfo.page.dart';
 import 'package:cartoon_repository/utils/constants.util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -61,17 +62,27 @@ class _CartoonState extends State<Cartoon> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return SizedBox(
       child: Container(
-        child: MouseRegion(
-          cursor: SystemMouseCursors.click,
-          onEnter: (_) {
-            animate(false);
+        child: GestureDetector(
+          onTap: () {
+            core.state.selectedCartoonInfo.changeInfo(
+              i: widget.img,
+              y: widget.year,
+            );
+
+            Navigator.pushNamed(context, MoreInfoPage.id);
           },
-          onExit: (_) {
-            animate(true);
-          },
-          child: Image.network(
-            widget.img,
-            height: double.infinity,
+          child: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            onEnter: (_) {
+              animate(false);
+            },
+            onExit: (_) {
+              animate(true);
+            },
+            child: Image.network(
+              widget.img,
+              height: double.infinity,
+            ),
           ),
         ),
       ),
