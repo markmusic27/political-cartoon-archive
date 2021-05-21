@@ -8,6 +8,10 @@ const kDefaultTextStyle = TextStyle(
   color: kDarkColor,
 );
 
+const kHeader1 = TextStyle(fontSize: 80);
+
+final kHeader2 = TextStyle(fontSize: 25, color: kDarkColor.withOpacity(0.8));
+
 const TextTheme kTextTheme = TextTheme(
   headline1: kDefaultTextStyle,
   headline2: kDefaultTextStyle,

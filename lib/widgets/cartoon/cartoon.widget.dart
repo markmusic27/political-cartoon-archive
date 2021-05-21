@@ -1,10 +1,7 @@
-import 'dart:html';
-
 import 'package:cartoon_repository/core/core.dart';
 import 'package:cartoon_repository/pages/moreInfoPage/moreInfo.page.dart';
 import 'package:cartoon_repository/utils/constants.util.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:provider/provider.dart';
 
 class Cartoon extends StatefulWidget {

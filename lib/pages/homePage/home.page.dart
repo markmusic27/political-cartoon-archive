@@ -9,18 +9,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: NoiceImageLayer(
+        includeBack: false,
         content: Column(
           children: [
             SizedBox(height: 100),
             SelectableText(
               "CARTOON ARCHIVE",
-              style: kDefaultTextStyle.copyWith(fontSize: 80),
+              style: kHeader1,
+              textAlign: TextAlign.center,
             ),
             SizedBox(height: 15),
             SelectableText(
               "A web archive of western and eastern political cartoons (1910 - 1939).",
-              style:
-                  TextStyle(fontSize: 25, color: kDarkColor.withOpacity(0.8)),
+              style: kHeader2,
+              textAlign: TextAlign.center,
             ),
             SizedBox(height: 20),
             CartoonCarousel(),

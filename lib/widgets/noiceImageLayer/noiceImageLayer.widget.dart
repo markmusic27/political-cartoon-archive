@@ -1,10 +1,13 @@
+import 'package:cartoon_repository/utils/constants.util.dart';
+import 'package:cartoon_repository/widgets/backNavButton/backNavButton.widget.dart';
 import 'package:cartoon_repository/widgets/clickHook/clickHook.widget.dart';
 import 'package:flutter/material.dart';
 
 class NoiceImageLayer extends StatelessWidget {
   final Widget content;
+  final bool includeBack;
 
-  NoiceImageLayer({@required this.content});
+  NoiceImageLayer({@required this.content, @required this.includeBack});
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +25,10 @@ class NoiceImageLayer extends StatelessWidget {
           ),
         ),
         ClickHook(),
+        Visibility(
+          visible: includeBack,
+          child: BackNavButton(),
+        ),
         content,
       ],
     );
