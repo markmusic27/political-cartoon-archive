@@ -14,6 +14,7 @@ class CartoonArchiveApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: kScaffoldBackgroundColor,
+        textTheme: kTextTheme,
       ),
       routes: {
         HomePage.id: (context) => HomePage(),
