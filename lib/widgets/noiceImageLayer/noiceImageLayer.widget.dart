@@ -10,7 +10,7 @@ class NoiceImageLayer extends StatelessWidget {
     return Stack(
       children: [
         Opacity(
-          opacity: 0.3,
+          opacity: 1,
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
