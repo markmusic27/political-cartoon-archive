@@ -22,7 +22,7 @@ class CartoonCarousel extends StatelessWidget {
           itemBuilder: (BuildContext context, int i) => Cartoon(
             img:
                 "https://miro.medium.com/max/5250/1*L76siIuZsUWPPoFpN6w_Fg.jpeg",
-            year: 2018,
+            year: 1918,
           ),
           itemCount: 10,
           itemWidth: double.infinity,

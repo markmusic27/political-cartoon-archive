@@ -1,4 +1,3 @@
-import 'package:cartoon_repository/utils/constants.util.dart';
 import 'package:cartoon_repository/widgets/backNavButton/backNavButton.widget.dart';
 import 'package:cartoon_repository/widgets/clickHook/clickHook.widget.dart';
 import 'package:flutter/material.dart';

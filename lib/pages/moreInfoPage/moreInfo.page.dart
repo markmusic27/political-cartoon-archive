@@ -1,9 +1,13 @@
 import 'package:cartoon_repository/core/core.dart';
+import 'package:cartoon_repository/models/article.model.dart';
 import 'package:cartoon_repository/utils/constants.util.dart';
 import 'package:cartoon_repository/widgets/noiceImageLayer/noiceImageLayer.widget.dart';
+import 'package:cartoon_repository/widgets/nytArchive/nytArchive.widget.dart';
+import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MoreInfoPage extends StatefulWidget {
   static String id = "moreInfoPage_id";
@@ -44,7 +48,7 @@ class _MoreInfoPageState extends State<MoreInfoPage> {
               ),
               SizedBox(height: 20),
               Expanded(
-                child: Container(),
+                child: NYTArchive(),
               )
             ],
           ),
