@@ -1,4 +1,3 @@
-import 'package:cartoon_repository/utils/constants.util.dart';
 import 'package:flutter/material.dart';
 
 class Cartoon extends StatelessWidget {
