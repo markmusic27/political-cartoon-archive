@@ -1,3 +1,4 @@
+import 'package:cartoon_repository/widgets/clickHook/clickHook.widget.dart';
 import 'package:flutter/material.dart';
 
 class NoiceImageLayer extends StatelessWidget {
@@ -20,6 +21,7 @@ class NoiceImageLayer extends StatelessWidget {
             ),
           ),
         ),
+        ClickHook(),
         content,
       ],
     );

@@ -9,18 +9,18 @@ part of 'onHoverPopup.store.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$OnHoverPopupStore on _OnHoverPopupStore, Store {
-  final _$hoveringAtom = Atom(name: '_OnHoverPopupStore.hovering');
+  final _$colorAtom = Atom(name: '_OnHoverPopupStore.color');
 
   @override
-  bool get hovering {
-    _$hoveringAtom.reportRead();
-    return super.hovering;
+  Color get color {
+    _$colorAtom.reportRead();
+    return super.color;
   }
 
   @override
-  set hovering(bool value) {
-    _$hoveringAtom.reportWrite(value, super.hovering, () {
-      super.hovering = value;
+  set color(Color value) {
+    _$colorAtom.reportWrite(value, super.color, () {
+      super.color = value;
     });
   }
 
@@ -28,11 +28,11 @@ mixin _$OnHoverPopupStore on _OnHoverPopupStore, Store {
       ActionController(name: '_OnHoverPopupStore');
 
   @override
-  void changeHover(bool b) {
+  void changeColor(Color b) {
     final _$actionInfo = _$_OnHoverPopupStoreActionController.startAction(
-        name: '_OnHoverPopupStore.changeHover');
+        name: '_OnHoverPopupStore.changeColor');
     try {
-      return super.changeHover(b);
+      return super.changeColor(b);
     } finally {
       _$_OnHoverPopupStoreActionController.endAction(_$actionInfo);
     }
@@ -41,7 +41,7 @@ mixin _$OnHoverPopupStore on _OnHoverPopupStore, Store {
   @override
   String toString() {
     return '''
-hovering: ${hovering}
+color: ${color}
     ''';
   }
 }
