@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class NoiceImageLayer extends StatelessWidget {
   final Widget content;
 
-  NoiceImageLayer({required this.content});
+  NoiceImageLayer({@required this.content});
 
   @override
   Widget build(BuildContext context) {

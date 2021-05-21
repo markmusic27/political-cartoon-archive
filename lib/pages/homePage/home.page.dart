@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
               style:
                   TextStyle(fontSize: 25, color: kDarkColor.withOpacity(0.8)),
             ),
-            SizedBox(height: 100),
+            SizedBox(height: 20),
             CartoonCarousel(),
           ],
         ),
