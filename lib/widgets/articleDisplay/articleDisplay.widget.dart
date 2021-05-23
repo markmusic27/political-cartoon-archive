@@ -20,7 +20,7 @@ class ArticleDisplay extends StatelessWidget {
         child: Row(
           children: [
             Image.network(article.img),
-            SizedBox(width: 10),
+            SizedBox(width: 30),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,

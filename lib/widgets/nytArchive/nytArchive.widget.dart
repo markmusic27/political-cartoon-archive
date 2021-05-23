@@ -26,7 +26,7 @@ class _NYTArchiveState extends State<NYTArchive> {
     return SizedBox(
       child: ListView.separated(
         itemCount: articles.length,
-        itemBuilder: (_, i) => SizedBox(height: 10),
+        itemBuilder: (_, i) => SizedBox(height: 20),
         separatorBuilder: (_, i) => ArticleDisplay(articles[i]),
       ),
     );
